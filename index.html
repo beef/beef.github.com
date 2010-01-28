@@ -111,7 +111,14 @@ body * {font-family:Georgia;}
         
     #content {position:relative; height:572px;}
     
-      a.back {
+      #content h3 {color:#980138; padding:29px 20px 13px 0; font-size:21px; letter-spacing:-1px;}
+      
+      #content p {color:#4f4f4f; font-size:15px; line-height:21px; font-style:italic; padding:0 20px 20px 0;}
+      
+      #content a {color:#980138; font-size:15px; line-height:21px; font-style:italic;}
+    
+      a#site-back,
+      a#quote-back {
         position:absolute;
         top:20px;
         left:0;
@@ -120,7 +127,8 @@ body * {font-family:Georgia;}
         background: #e1ddd5 url(images/left-arrow.gif) no-repeat center center; 
       }
     
-      a.forward {
+      a#site-forward,
+      a#quote-forward {
         position:absolute;
         top:20px;
         right:0;
@@ -129,11 +137,13 @@ body * {font-family:Georgia;}
         background: #e1ddd5 url(images/right-arrow.gif) no-repeat center center;
       }
       
-      a.forward:hover,
-      a.back:hover {background-color:#fb9f00;}
+      a#quote-forward, a#quote-back {height:83% !important;}
+      
+      a#site-forward:hover, a#quote-forward:hover,
+      a#site-back:hover, a#quote-back:hover {background-color:#fb9f00;}
     
       #site-gallery {
-        width:900px;
+        width:900px !important;
         height:328px;
         margin-bottom:10px;
         float:right;
@@ -141,27 +151,50 @@ body * {font-family:Georgia;}
         right:-20px;
       }
       
-        #site-gallery ul {
-          width:860px;
-          height:100%;
+        #site-gallery .container {
+          width:840px;
+          height:328px;
           position:absolute;
           right:20px;
+          z-index:-1 !important;
+          padding:10px;
+          overflow:hidden;
         }
+        
+        .container .slides {width:840px; overflow:hidden;}
+        
+          #site-gallery ul li {margin-right:20px;}
+          
+            #site-gallery li div {background:#f3f2ef; width:840px !important; height:308px;}
+            
+            #site-gallery li div img {float:left;width:500px; height:308px; margin-right:30px;}
       
       #quote-gallery {
-        width:900px;
+        width:900px !important;
         height:223px;
         float:right;
         position:relative;
         right:-20px;
       }
       
-        #quote-gallery ul {
-          width:860px;
-          height:100%;
+        #quote-gallery .container {
+          width:840px;
+          height:204px;
           position:absolute;
           right:20px;
+          z-index:-1 !important;
+          padding:10px;
+          overflow:hidden;
         }
+        
+        #quote-gallery li {background:#fff; width:900px !important;}
+        
+          #content #quote-gallery img {float:left;width:310px; height:206px; margin-right:59px;}
+
+          #content  #quote-gallery p {color:#980138; font-size:21px; line-height:28px; font-style:italic; padding:24px 54px 0 0; height:137px;}
+
+          #content #quote-gallery strong {color:#505050; font-size:14px; line-height:28px; font-family:'Arial';}
+        
     
     #footer {position:relative; height:235px;}
     
@@ -303,8 +336,8 @@ body * {font-family:Georgia;}
 #meet-us,
 #mailing,
 #legal,
-#quote-gallery ul,
-#site-gallery ul {  
+#quote-gallery .container,
+#site-gallery .container {  
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -313,14 +346,16 @@ body * {font-family:Georgia;}
   border:#fff;
 }
   	
-a.back  {
+a#site-back,
+a#quote-back  {
   -moz-border-radius: 5px 0 0 5px;
   -webkit-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
   behavior: url(border-radius.htc);
 }
 
-a.forward  {
+a#site-forward,
+a#quote-forward  {
   -moz-border-radius: 0px 5px 5px 0px;
   -webkit-border-radius: 0px 5px 5px 0px;
   border-radius: 0px 5px 5px 0px;
@@ -330,8 +365,10 @@ a.forward  {
   	
 #header h1#logo,
 form input#go,
-a.forward,
-a.back	{
+a#site-forward, 
+a#quote-forward,
+a#site-back, 
+a#quote-back	{
   overflow: hidden;
   text-align: left;
   display: block;
@@ -355,7 +392,7 @@ a.back	{
   	$(document).ready(function() {
   	  
   	  Cufon.replace('#tagline h2' , { fontFamily: 'Gotham Book', hover: true });
-      Cufon.replace('#contact h2, #tagline h2 span, #meet-us h4, #mailing h4, #legal h4' , { fontFamily: 'Gotham Medium', hover: true });
+      Cufon.replace('#contact h2, #tagline h2 span, #meet-us h4, #mailing h4, #legal h4, #content h3' , { fontFamily: 'Gotham Medium', hover: true });
       
   	  
   		$('#email').click(
@@ -374,24 +411,24 @@ a.back	{
         }
       );
       
-      if($("#site-gallery ul li").length > 2) {
-    	  $("#site-gallery").prepend("<a href='#' class='back'>Backward</a>");
-    	  $("#site-gallery").append("<a href='#' class='forward'>Forward</a>");
+      if($("#site-gallery ul li div").length > 2) {
+    	  $("#site-gallery").prepend("<a href='#' id='site-back'>Backward</a>");
+    	  $("#site-gallery").append("<a href='#' id='site-forward'>Forward</a>");
 
     	  $("#site-gallery").jCarouselLite({
-    	    btnNext: ".forward",
-    	    btnPrev: ".back",
+    	    btnNext: "#site-forward",
+    	    btnPrev: "#site-back",
     	    visible: 1
     	  });
     	}
     	
-    	if($("#quote-gallery ul li").length > 2) {
-    	  $("#quote-gallery").prepend("<a href='#' class='back'>Backward</a>");
-    	  $("#quote-gallery").append("<a href='#' class='forward'>Forward</a>");
+    	if($("#quote-gallery ul li div").length > 2) {
+    	  $("#quote-gallery").prepend("<a href='#' id='quote-back'>Backward</a>");
+    	  $("#quote-gallery").append("<a href='#' id='quote-forward'>Forward</a>");
 
     	  $("#quote-gallery").jCarouselLite({
-    	    btnNext: ".forward",
-    	    btnPrev: ".back",
+    	    btnNext: "#quote-forward",
+    	    btnPrev: "#quote-back",
     	    visible: 1
     	  });
     	}
@@ -423,47 +460,70 @@ a.back	{
 <!-- so: content -->    
     <div id="content">
     
-    <div id="site-gallery">  
-      <ul>
-        <li>
-          <img src="#" alt="Image"/>
-          <h3>Title</h3>
-          <p>Description</p>
-          <a href="#">Link</a>
-        </li>
-        <li>
-          <img src="#" alt="Image"/>
-          <h3>Title</h3>
-          <p>Description</p>
-          <a href="#">Link</a>
-        </li>
-        <li>
-          <img src="#" alt="Image"/>
-          <h3>Title</h3>
-          <p>Description</p>
-          <a href="#">Link</a>
-        </li>
-      </ul>
+    <div id="site-gallery">
+      <div class="container">
+        <div class="slides">
+          <ul>
+            <li>
+              <div>
+                <img src="images/example.gif" alt="Image"/>
+                <h3>Jason Bruges Studio</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <a href="http://www.jasonbruges.com">www.jasonbruges.com</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="images/example.gif" alt="Image"/>
+                <h3>Jason Bruges Studio</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <a href="http://www.jasonbruges.com">www.jasonbruges.com</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="images/example.gif" alt="Image"/>
+                <h3>Jason Bruges Studio</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <a href="http://www.jasonbruges.com">www.jasonbruges.com</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     
     <div id="quote-gallery">  
-      <ul>
-        <li>
-          <img src="#" alt="Image"/>
-          <p>Quote</p>
-          <strong>Author</strong>
-        </li>
-        <li>
-          <img src="#" alt="Image"/>
-          <p>Quote</p>
-          <strong>Author</strong>
-        </li>
-        <li>
-          <img src="#" alt="Image"/>
-          <p>Quote</p>
-          <strong>Author</strong>
-        </li>
-      </ul>
+      <div class="container">
+        <div class="slides"> 
+          <ul>
+            <li>
+              <div>
+              <img src="images/quote.gif" alt="Image"/>
+              <p>Enthusiastic and flexible, Beef helped us realise our aims beyond expectation. </p>
+              <strong>Mike Bennett, CEO Bristol Media</strong>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="images/quote.gif" alt="Image"/>
+                <p>Enthusiastic and flexible, Beef helped us realise our aims beyond expectation. </p>
+                <strong>Mike Bennett, CEO Bristol Media</strong>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="images/quote.gif" alt="Image"/>
+                <p>Enthusiastic and flexible, Beef helped us realise our aims beyond expectation. </p>
+                <strong>Mike Bennett, CEO Bristol Media</strong>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
         
     </div>
