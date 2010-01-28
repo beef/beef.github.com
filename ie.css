@@ -7,3 +7,7 @@ padding:6px 15px 0;
 
 font-size:12px;
 }
+
+#site-gallery li div {
+width:860px !important;
+}
