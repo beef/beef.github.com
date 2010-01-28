@@ -4,6 +4,9 @@ padding:6px 15px 0;
 }
 
 #pop-in {
-
 font-size:12px;
+}
+
+a#site-forward, a#quote-forward {
+right:-1px;
 }
