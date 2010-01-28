@@ -93,6 +93,7 @@ body * {font-family:Georgia;}
         position:relative;
         padding:20px;
         color:#505050;
+        z-index:999;
         }
         
         #tagline h2 {
@@ -122,9 +123,8 @@ body * {font-family:Georgia;}
         position:absolute;
         top:20px;
         left:0;
-        height:88%;
+        height:287px;
         width:20px;
-        background: #e1ddd5 url(images/left-arrow.gif) no-repeat center center; 
       }
     
       a#site-forward,
@@ -132,15 +132,24 @@ body * {font-family:Georgia;}
         position:absolute;
         top:20px;
         right:0;
-        height:88%;
+        height:287px;
         width:20px;
-        background: #e1ddd5 url(images/right-arrow.gif) no-repeat center center;
       }
       
-      a#quote-forward, a#quote-back {height:83% !important;}
+      a#quote-forward, a#quote-back {height:184px !important;}
       
-      a#site-forward:hover, a#quote-forward:hover,
-      a#site-back:hover, a#quote-back:hover {background-color:#fb9f00;}
+      a#site-forward:hover {background: url(images/large-slide.png) no-repeat -60px 0;}
+      a#site-back:hover {background: url(images/large-slide.png) no-repeat 0 0;}
+      
+      a#site-forward {background: url(images/large-slide.png) no-repeat -40px 0;}
+      a#site-back {background: url(images/large-slide.png) no-repeat -20px 0;}
+      
+      a#quote-forward:hover {background: url(images/small-slide.png) no-repeat -60px 0;}
+      a#quote-back:hover {background: url(images/small-slide.png) no-repeat 0 0;}
+      
+      a#quote-forward {background: url(images/small-slide.png) no-repeat -40px 0;}
+      a#quote-back {background: url(images/small-slide.png) no-repeat -20px 0;}
+
     
       #site-gallery {
         width:900px !important;
@@ -342,22 +351,6 @@ body * {font-family:Georgia;}
   behavior: url(border-radius.htc);
   background:#fff;
   border:#fff;
-}
-
-a#site-back,
-a#quote-back  {
-  -moz-border-radius: 5px 0 0 5px;
-  -webkit-border-radius: 5px 0 0 5px;
-  border-radius: 5px 0 0 5px;
-  behavior: url(border-radius.htc);
-}
-
-a#site-forward,
-a#quote-forward  {
-  -moz-border-radius: 0px 5px 5px 0px;
-  -webkit-border-radius: 0px 5px 5px 0px;
-  border-radius: 0px 5px 5px 0px;
-  behavior: url(border-radius.htc);
 }
 
   	
