@@ -27,7 +27,7 @@ $(document).ready(function() {
 	  $("#site-gallery").jCarouselLite({
 	    btnNext: "#site-forward",
 	    btnPrev: "#site-back",
-	    visible: 1
+		visible: 1
 	  });
 	}
 	
