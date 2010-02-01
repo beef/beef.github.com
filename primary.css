@@ -141,7 +141,7 @@ body * {font-family:Georgia;}
 
       .slides ul {z-index:999 !important;}
 
-      #site-gallery {
+      #site-gallery, #thankyou {
         width:900px !important;
         height:328px;
         margin-bottom:10px;
@@ -157,6 +157,9 @@ body * {font-family:Georgia;}
           padding:10px;
           overflow:hidden;
         }
+     
+		#thankyou .container {width:860px;position:absolute;right:20px;}
+ 		#thankyou .container p, #thankyou .container h3 {margin-left: 20px;}
 
         .container .slides {width:840px; overflow:hidden;}
 
@@ -333,7 +336,8 @@ body * {font-family:Georgia;}
 #mailing,
 #legal,
 #quote-gallery .container,
-#site-gallery .container {
+#site-gallery .container,
+#thankyou .container {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
