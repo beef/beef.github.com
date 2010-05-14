@@ -1,0 +1,222 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+ul, li {list-style-type:none;}
+
+a {text-decoration:none;}
+a:hover {text-decoration:underline; cursor:pointer;}
+
+/* Page Style */
+
+body {background:#FFFFFF url(images/page_background.gif) repeat scroll 0 0; margin:0; padding:0;}
+
+body * {font-family:Georgia;}
+
+  #wrap {margin:0 auto 80px auto; width:900px ; padding:0 0 0 0;}
+
+    #header {position:relative; height:290px;}
+
+      #header h1#logo {
+        background:url(images/logo.png) no-repeat;
+        width:451px;
+        height:227px;
+        position:absolute;
+        top:-30px;
+        left:-74px;
+        z-index:-999;
+        }
+
+      #contact {
+        float:right;
+        text-align:right;
+        width:420px;
+        height:64px;
+        margin:20px 20px 0 0;
+        padding:13px 20px 20px;
+        }
+
+        #contact h2 {
+          text-transform: uppercase;
+          font-size: 18px;
+          color:#585858;
+          padding:0 0 13px 0;
+          margin:0 0 13px 0;
+          border-bottom:1px solid #f2efea;
+          letter-spacing:1px;
+          text-align:left;
+        }
+
+        #contact em {
+          font-size: 16px;
+          color:#e1ddd5;
+          font-style:italic;
+        }
+
+          #contact em span,
+          #contact em a {
+            color:#fb9f00;
+          }
+
+      #tagline {
+        float:right;
+        width:820px;
+        margin:34px 20px 0 0;
+        position:relative;
+        padding:20px;
+        color:#505050;
+        }
+
+        #tagline h2 {
+          font-size:36px;
+		  margin: 0 0 20px 0;
+        }
+
+        #tagline p {
+          padding:4px 0 0;
+          font-size:17px;
+          font-style:italic;
+          line-height:24px;
+        }
+
+		.module {padding-bottom: 40px;}
+		.module, h4 {clear: both;}
+		.module * {float:left}
+		.module li, .module li a {float: none;}
+
+
+		#agency-work, #client-work {
+	        float:right;
+	        width:820px;
+	        margin:10px 20px 0 0;
+	        position:relative;
+	        padding:20px;
+	        color:#505050;
+	        }
+
+		#agency-work h3, #client-work h3 {
+	        font-size:18px;
+		    text-transform: uppercase;
+			color: #980138;
+			padding: 0 0 20px 0;
+			margin: 0 0 20px 0;
+            border-bottom:1px solid #f2efea;
+	        }
+		#agency-work h4, #client-work h4 {
+	        font-size:14px;
+		    text-transform: uppercase;
+			color: #980138;
+			margin: 0 0 6px 0;
+	        }
+	    #agency-work p, #client-work p {
+			margin-right: 25px;
+			padding: 0;
+	        font-size: 14px;
+	        font-style: italic;
+			width: 300px;
+	        line-height: 18px;
+			}
+		#agency-work img, #client-work img {
+			margin: 4px 20px 0 0;
+            border: 1px solid #f2efea;
+			}
+		ul.tasks, ul.links {
+			margin: 5px 25px 0 5px;
+			width: 150px;
+			}
+
+		ul.tasks li, ul.links li {
+			font-family: Arial, sans-serif;
+			font-size: 12px;
+		}
+		ul.tasks li.title, ul.links li.title {
+			color: #980138;
+			font-weight: bold;
+			padding: 0 0 3px 0;
+		}
+				
+    	#agency-work a, #client-work a {color:#fb9f00; font-size:12px; font-family: Arial, sans-serif;}
+
+
+
+
+      #legal {
+        width:820px;
+        height:52px;
+        float:right;
+        margin:10px 20px 20px 0;
+        padding:11px 20px 0px;
+      }
+
+        #legal h4 {
+          float:left;
+          font-size:18px;
+          color: #505050;
+          margin-top:9px;
+        }
+
+        #legal p {
+          float:right;
+          font-family:'Arial';
+          font-size:9px;
+          line-height:14px;
+          text-align:right;
+          color:#585858;
+          font-weight:bold;
+        }
+
+.maroon {color:#980138;}
+.yellow {color:#fb9f00;}
+
+#contact,
+#tagline,
+#agency-work,
+#client-work,
+#legal {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(border-radius.htc);
+  background:#fff;
+  border:#fff;
+}
+
+#wrap-banner {margin:0 auto 80px auto; width:900px ; padding:0 0 0 0; text-align: center;}
+#banner {
+	margin: 20px auto;
+}
+
+#header h1#logo  {
+  overflow: hidden;
+  text-align: left;
+  display: block;
+  line-height:0;
+  text-indent: -1000em;}
+
+
+
+.module:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+}
+
