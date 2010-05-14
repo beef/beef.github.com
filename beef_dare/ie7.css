@@ -1,3 +1,7 @@
 #site-gallery li {
 width:860px !important;
 }
+
+.module {
+	height: 1%;
+}

@@ -26,13 +26,13 @@ a:hover {text-decoration:underline; cursor:pointer;}
 
 /* Page Style */
 
-body {background:#FFFFFF url(images/page_background.gif) repeat scroll 0 0; margin:0; padding:0;}
+body {background:#FFFFFF url(images/page_background.gif) repeat scroll 0 0; margin:0 0 80px 0; padding:0;}
 
 body * {font-family:Georgia;}
 
-  #wrap {margin:0 auto 80px auto; width:900px ; padding:0 0 0 0;}
+  #wrap {margin:0 auto 0px auto; width:900px ; padding:0 0 0 0;}
 
-    #header {position:relative; height:290px;}
+    #header {position:relative; height: 227px;}
 
       #header h1#logo {
         background:url(images/logo.png) no-repeat;
@@ -42,7 +42,7 @@ body * {font-family:Georgia;}
         top:-30px;
         left:-74px;
         z-index:-999;
-        }
+      }
 
       #contact {
         float:right;
@@ -78,7 +78,7 @@ body * {font-family:Georgia;}
       #tagline {
         float:right;
         width:820px;
-        margin:34px 20px 0 0;
+        margin:-76px 20px 0 0;
         position:relative;
         padding:20px;
         color:#505050;
@@ -161,7 +161,7 @@ body * {font-family:Georgia;}
         width:820px;
         height:52px;
         float:right;
-        margin:10px 20px 20px 0;
+        margin:10px 20px 0 0;
         padding:11px 20px 0px;
       }
 
@@ -208,11 +208,12 @@ body * {font-family:Georgia;}
   text-align: left;
   display: block;
   line-height:0;
-  text-indent: -1000em;}
+  text-indent: -1000em;
+}
 
 
 
-.module:after {
+.module:after, #wrap:after {
         content: ".";
         display: block;
         height: 0;
