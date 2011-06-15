@@ -197,8 +197,39 @@ body * {font-family:Georgia;}
 
           #content #quote-gallery strong {color:#505050; font-size:14px; line-height:28px; font-family:'Arial';}
 
+    #recruiting, #job {
+		margin: 0 0 20px 20px;
+		padding: 20px;
+		width: 820px;
+		background-color: #FB9F00 !important;
+ 	}
 
-    #footer {position:relative; height:235px;}
+	#recruiting h3, #recruiting p {
+		padding: 0;
+		color: #fff;
+	}
+	
+	#recruiting h3, #job h4 { margin-bottom: 10px; }
+	#recruiting p, #recruiting a { font-size: 17px; }
+	
+	#job-page #content { height: auto; }
+	#job strong { text-decoration: underline; display: block; margin: 10px 0;}
+	
+	#job {
+		background: #fff !important;
+	}
+	
+	#job h4 {
+		margin-top: 20px;
+	}
+	
+	#job p { font-style: normal; }
+	
+	#job ul li { color: #4F4F4F; }
+	
+	.small { font-size: 10px !important; font-style: italic !important; }
+
+    #footer { position:relative; height:235px; }
 
       #meet-us {
         width:510px;
@@ -336,6 +367,8 @@ body * {font-family:Georgia;}
 #meet-us,
 #mailing,
 #legal,
+#recruiting,
+#job,
 #quote-gallery .container,
 #site-gallery .container,
 #thankyou .container {
@@ -359,3 +392,12 @@ a#quote-back  {
   display: block;
   line-height:0;
   text-indent: -1000em;}
+
+#recruiting:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
