@@ -207,7 +207,10 @@ body * {font-family:Georgia;}
 	#recruiting h3, #recruiting p {
 		padding: 0;
 		color: #fff;
+		float: left;
 	}
+	
+	#recruiting p { float: right; margin: 5px 20px 0 0 !important; }
 	
 	#recruiting h3, #job h4 { margin-bottom: 10px; }
 	#recruiting p, #recruiting a { font-size: 17px; }
