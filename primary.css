@@ -228,7 +228,7 @@ body * {font-family:Georgia;}
 	
 	#job p { font-style: normal; }
 	
-	#job ul li { color: #4F4F4F; }
+	#job ul.skills-list li { color: #4F4F4F; padding-bottom: 5px; list-style: disc inside;}
 	
 	.small { font-size: 10px !important; font-style: italic !important; }
 
