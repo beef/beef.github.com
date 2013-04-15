@@ -46,6 +46,20 @@
   <script src="javascripts/carousel.lite.js" type="text/javascript"></script>
   <script src="javascripts/application.js" type="text/javascript"></script>
 
+  <style type="text/css">
+  .points, .statement {
+    color: #4f4f4f;
+  }
+
+  .points li {
+    list-style: disc;
+    margin-left: 25px;
+  }
+
+  .statement {
+    font-style: none;
+  }
+  </style>
 </head>
 
 <body id="job-page">
@@ -70,53 +84,49 @@
     <div id="content">
 	
 	<div id="job">
-		<h3>Junior Studio Administrator</h3>
+		<h3>Senior Producer</h3>
 		<ul>
 			<li>Salary: Competitive</li>
                 <li>Start Date: ASAP</li>   
 			<li>Location: <a href="http://maps.google.com/maps?client=safari&ampq=bs4+3eh&oe=UTF-8&ie=UTF8&hl=en&hq=&hnear=Bristol,+Avon+BS4+3EH,+United+Kingdom&ll=51.443469,-2.576122&spn=0.01728,0.061798&z=15" target="_blank">Bristol</a></li>
 		</ul>
-            
-            <h4>The Role</h4>
-		<p>Does the idea of helping run a studio so everything runs smooth like custard appeal to you? </p>
+  </br></br>
+    <p>So here’s the thing. We’re getting up to our necks in clients & projects and it’s getting out of control. We need a Senior Producer to join the team and help us get stuff done.</p> 
 
-           <p>Do you relish the idea of analyzing data and statistics and preparing jaw-dropping reports that make a difference? </p>
+    <p>Like any agency, it’s fast paced and sometimes hectic here so you’ll be super organised.  We'll be counting on you to ensure everything gets done to time and budget, whilst still being an awesome piece of work. For multiple clients at the same time.</p>
 
-           <p>Are you nimble, passionate and able to think of useful things to do without being told all the time?</p>
+    <p>We’re looking for someones who’s a digital native - you'll not only understand the landscape, you'll be a part of it. The right candidate will have an agency background and ideally have a Prince 2 or Agile badge. If not, then be able to show you’ve delivered projects in those frameworks.</p>
 
-           <p>If you answered yes to those questions then read on.</p>
+    <strong class="statement">These are the top line responsibilities;</strong>
+    <ul class="points">
+      <li>Planning and costing of projects</li>
+      <li>Day to day management of project resources</li>
+      <li>Be a primary point of contact for the client</li>
+      <li>Troubleshooting &amp; resolution of project issues</li>
+      <li>Identifying scope changes and managing change requests</li>
+      <li>Ensure projects are delivered to time and budget</li>
+      <li>Assist in client development and new business pitches</li>
+    </ul>
 
-           <p>We’re looking for someone to come in and work with the account team to help administrate the studio - making sure stuff gets done on time and Bristol fashion. We also want you to track those things we do for our clients and make reports on performance and stuff like that.</p>
+    <strong class="statement">In return we'll give you;</strong>
+    <ul class="points">
+      <li>Cash every month</li>
+      <li>A pension scheme (if you want it)</li>
+      <li>Time off</li>
+      <li>Lovely team</li>
+      <li>Nice office</li>
+      <li>Good biscuits</li>
+    </ul>
+    <br/><br/>
+    <p>If you could mark your application "Senior Producer" or something that help us find it amongst the fan mail.</p>
 
-           <p>There will be some more dull aspects to the job like making sure there’s pens in the drawer, paper in the printer and that kind of thing, but every job has a bit of nonsense that comes with it. On the upside you’ll be in charge of biscuits.</p>
+    <p>Send your CV to <a href="mailto:jobs@wearebeef.co.uk">jobs@wearebeef.co.uk</a>. Our real life address is at the bottom of this page.</p>
 
-           <p>We’ll make up for all of this by paying you money, giving you a comfy chair in a nice office and generally be a pretty cool, relaxed place to work. Things do go haywire sometimes and that’s just the way it is with the kinds of things we do. But we’re hoping that you can help us make the crazy times as infrequent and manageable as possible.</p>
+    <p>From an agency? Look... how do I put this? Um... you know what? No thanks.</p>
 
-           <p>On top of the money, you’ll enjoy a generous holiday allowance and the chance to learn new skills.</p>
-           
-           <p>Also, although this is a somewhat ground-level position, we’re hoping that you can flourish into a fabulous Beeflet as the job has a future that lies in Project Management and Account Handling. When that happens you’ll lose the biscuit responsibility, but such are the woes of career progression.</p>
+    <p>No, really.</p>
 
-          <p>This role would suit someone who’s fresh out of education and/or looking for an in-road into an agency with their sights set on a more management based career.</p>
-
-          <p>Seeing as you’re the sort of person who enjoys lists, here’s a list of some of the key responsibilities;</p>
-
-          <h4>Reporting to : Account Director</h4>
-          <ul>
-          <li>Creating Utilization Reports from Timesheets</li>
-          <li>Creating Monthly Account Reports</li>
-          <li>Assisting Account Team with Internal Systems</li>
-          <li>Managing Office Supplies</li>
-          <li>Maintaining Overview of Customer Contracts &amp; Renewals</li>
-
-          <h4>Obvious things we need you do;</h4>
-          <ul>
-          <li>Answer the phone sometimes</li>
-          <li>Be presentable in a casual way</li>
-          <li>Be cool</li>
-		<br/><br/>
-		<p>Send your CV to <a href="mailto:jobs@wearebeef.co.uk">jobs@wearebeef.co.uk</a>. Our real life address is at the bottom of this page.</p>
-		
-		<p>If you're an agency, there is no next. Shoooo!</p>
+    <p>No.</p>
 	</div>
 
     
