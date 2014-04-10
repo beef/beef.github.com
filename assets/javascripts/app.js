@@ -1,0 +1,1 @@
+$(function(){window.router=new AppRouter,window.AppView=new AppView({el:$("body")}),window.PanelView=new PanelView({el:$("body")}),window.OverlayView=new OverlayView({el:$("body")}),window.FilterView=new FilterView({el:$("body")}),Backbone.history.start({pushState:!0,silent:!0})});

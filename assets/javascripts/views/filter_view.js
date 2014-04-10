@@ -1,0 +1,1 @@
+var FilterView=Backbone.View.extend({initialize:function(e){Backbone.on("loadFilter",this.loadFilter,this)},loadFilter:function(e){bT=new beefTweets,bT.filter_tweets(e)}});
