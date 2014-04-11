@@ -1,0 +1,164 @@
+body{
+  background-color: #0083df;
+  color: #202352;
+  font-size: 17px;
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+  -webkit-transition: background 1s linear;
+  -moz-transition: background 1s linear;
+  -ms-transition: background 1s linear;
+  -o-transition: background 1s linear;
+  transition: background 1s linear;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+body.clicked{background-color: #202352;}
+
+a{
+  color: #fff;
+  border-bottom: solid 2px #fff;
+  text-decoration: none;
+}
+
+a:hover{border-bottom-color: #202352;}
+
+h1, h2, h3, h4, li, footer.top, p.first, p.second, p.third, p.ps {
+  font-family: 'Avenir LT W02 85 Heavy';
+  font-weight: normal !important;
+}
+
+p.first, p.second, p.third, h3{font-size: 25px;}
+
+img.logo{
+  margin: 60px auto 0;
+  width: 80%;
+  max-width: 400px;
+}
+
+h2 {
+  opacity: 0;
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -ms-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+  color: #fff;
+}
+
+body.clicked h2{opacity: 1;}
+
+
+/*Main-content */
+.main-content {
+  width: 80%;
+  margin: 0 auto 40px;
+  text-align: left;
+  max-width: 620px;
+}
+
+@media only screen and (min-width: 1024px){
+  .main-content {width: 60%;}
+  ul {float:left;width: 45%;}
+  ul.list-one{margin-right: 10%;}
+  footer:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 769px){
+/*  .block{float:left;width: 45%;}
+  .block.one{margin-right: 10%;clear: left;}*/
+}
+
+@media only screen and (min-width: 480px){
+  ul li span{display: inline-block !important;}
+}
+
+p.ps{
+  clear: both;
+  display: block;
+  text-align: center;
+  padding: 70px 0 24px;
+  font-size: 20px;
+}
+
+
+a.light-switch{
+  border: none;
+  width: 146px;
+  height: 146px;
+  background: url("/lightswitch.png") no-repeat 0 0;
+  overflow: hidden;
+  text-align: left;
+  display: block;
+  line-height: 0;
+  text-indent: -1000em;
+  margin: 0 auto 0 auto;
+}
+
+a.light-switch.clicked{
+  background-position: 0 -166px;
+}
+
+/*Footer*/
+footer.site-footer{
+  color: #0083df;
+  background-color: #202352;
+  padding: 5% 10%;
+  text-align: left;
+  opacity: 0;
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -ms-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+
+transition-delay: 2s;
+-webkit-transition-delay: 2s;
+
+
+}
+
+body.clicked footer.site-footer{
+  opacity: 1;
+}
+
+p.contact {
+  font-family: 'Avenir LT W02 85 Heavy';
+  font-weight: normal !important;
+  display: block;
+  text-align: center;
+  padding: 70px 0 0 0;
+  clear: both;
+}
+
+footer.top a:hover{border-bottom: #0083df;}
+body.clicked footer.top a:hover{border-bottom: #202352;}
+
+
+footer.site-footer p.copyright {
+  padding-top: 5%;
+  clear: both;
+  text-align: center;
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li{
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+ul li span {display: block; width: 150px; margin-bottom: 5px;}
